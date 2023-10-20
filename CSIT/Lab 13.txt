@@ -1,0 +1,48 @@
+public class ConstructorDemo {
+    public static void main(String[] args) {
+        // Example 1: Creating an object using a default constructor
+        Person person1 = new Person();
+        person1.setName("John");
+        person1.setAge(30);
+        System.out.println("Person 1 - Name: " + person1.getName() + ", Age: " + person1.getAge());
+
+        // Example 2: Creating an object using a parameterized constructor
+        Person person2 = new Person("Alice", 25);
+        System.out.println("Person 2 - Name: " + person2.getName() + ", Age: " + person2.getAge());
+    }
+}
+
+class Person {
+    private String name;
+    private int age;
+
+    // Default constructor (constructor without parameters)
+    public Person() {
+        // Initialize with default values
+        name = "Unknown";
+        age = 0;
+    }
+
+    // Parameterized constructor
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Getter and setter methods
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+}

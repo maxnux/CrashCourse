@@ -1,0 +1,19 @@
+//enhanced for loop to traverse/iterate the array and print its elements.
+public class Main
+{
+    public static void main(String[] args) {
+        //declare and initialize a string array
+        String[] numArray = {"one","two", "three", "four", "five"};
+        System.out.println("String Array elements displayed using for loop:");
+        // for loop to iterate over the string array
+        for(int i=0; i<numArray.length;i++)
+            System.out.print(numArray[i] + " ");
+     
+        System.out.println("\n");
+     
+        System.out.println("String Array elements displayed using enhanced for loop:");
+        //enhanced for loop to iterate over the string array
+        for(String val:numArray)
+            System.out.print(val + " ");
+    }
+}

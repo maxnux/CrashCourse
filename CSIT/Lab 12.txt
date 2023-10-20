@@ -1,0 +1,38 @@
+public class MethodsWithParametersDemo {
+    public static void main(String[] args) {
+        // Example 1: A method with parameters to add two numbers
+        int sum = addNumbers(5, 7);
+        System.out.println("Sum of 5 and 7 is: " + sum);
+
+        // Example 2: A method with parameters to find the maximum of two numbers
+        int max = findMax(12, 9);
+        System.out.println("The maximum of 12 and 9 is: " + max);
+
+        // Example 3: A method with parameters to greet a person
+        greetPerson("Mayank");
+
+        // Example 4: A method with parameters to calculate the area of a rectangle
+        double area = calculateRectangleArea(4.5, 7.2);
+        System.out.println("The area of the rectangle is: " + area);
+    }
+
+    // Method to add two numbers
+    public static int addNumbers(int a, int b) {
+        return a + b;
+    }
+
+    // Method to find the maximum of two numbers
+    public static int findMax(int x, int y) {
+        return (x > y) ? x : y;
+    }
+
+    // Method to greet a person
+    public static void greetPerson(String name) {
+        System.out.println("Hello, " + name + "!");
+    }
+
+    // Method to calculate the area of a rectangle
+    public static double calculateRectangleArea(double length, double width) {
+        return length * width;
+    }
+}

@@ -1,0 +1,19 @@
+public class CalculateTotal {
+    public static void main(String[] args) {
+        // Input numbers
+        int number1 = 5;
+        int number2 = 7;
+
+        // Call the method to calculate the total
+        int total = calculateTotal(number1, number2);
+
+        // Display the result
+        System.out.println("The total of " + number1 + " and " + number2 + " is: " + total);
+    }
+
+    // User-defined method to calculate the total of two numbers
+    public static int calculateTotal(int num1, int num2) {
+        int total = num1 + num2;
+        return total;
+    }
+}
